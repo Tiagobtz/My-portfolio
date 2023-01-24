@@ -10,33 +10,8 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(6, 1, 31), rgb(9, 1, 44), rgb(47, 26, 26));
+    background-image: linear-gradient(to right, rgb(7, 3, 31), rgb(14, 3, 57), rgb(47, 26, 26));
     font-family: 'Poppins', sans-serif;
-}
-
-header {
-    height: 50px;
-    padding: 15px;
-}
-
-#botao {
-    float: right;
-}
-
-#botao {
-    display: inline-block;
-    background-color: rgb(110, 37, 37);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    font-weight: bold;
-    border-radius: 20px;
-}
-
-#botao:hover {
-    background-color: rgb(3, 17, 95);
-    color: yellow;
-    cursor: pointer;
-    transition: all 0.5s;
 }
 
 #hello {
@@ -49,43 +24,44 @@ header {
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
     font-weight: 500;
-    color: rgb(11, 215, 230);
+    color: rgb(5, 154, 199);
     margin-bottom: 20px;
 }
 
 #sobre-mim {
-    font-size: 2rem;
-    color: rgb(11, 215, 230);
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
 }
 
 #menu-fixo {
     position: fixed;
-    width: 200px;
+    width: 150px;
     height: 100vh;
-    color: rgb(11, 215, 230);
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
     top: 0;
+    margin-top: 25px;
 }
 
 #lista-do-menu-fixo li {
     text-align: center;
     display: block;
-    padding: 50px;
+    padding: 30px;
     height: 60px;
     margin: auto;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #lista-do-menu-fixo li:hover {
-    background-color: rgb(3, 17, 95);
-    color: yellow;
+    background-color: rgb(46, 50, 174);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.5s;
 }
 
 .fas {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -97,7 +73,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 140px;
     margin-left: 50px;
 }
 
@@ -107,7 +83,7 @@ header {
 }
 
 #segunda-coluna img {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 /* background-image: linear-gradient(to right, rgb(3, 3, 75), rgb(2, 2, 70), rgb(23, 23, 180)); */
