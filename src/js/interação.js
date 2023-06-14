@@ -1,4 +1,4 @@
-const botao = document.querySelector("#botao")
+const botao = document.querySelector("#botao-sobre-mim")
 const apresentacao = document.querySelector("#apresentacao")
 
 botao.addEventListener("click", function(){

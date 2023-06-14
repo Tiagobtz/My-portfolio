@@ -17,7 +17,7 @@ body {
     margin-top: 25px;
     margin-left: 10px;
     position: fixed;
-    height: 120px;
+    height: 100vh;
     width: 150px;
 }
 
@@ -50,12 +50,12 @@ body {
 }
 
 .fas {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 main {
-    margin-left: 260px;
+    margin-left: 200px;
 }
 
 #sobre-mim {
@@ -65,6 +65,7 @@ main {
 
 #saudacoes {
     margin-top: 100px;
+    margin-left: 80px;
 }
 
 #sobre-mim #saudacoes h1 {
@@ -76,12 +77,14 @@ main {
 #sobre-mim #saudacoes #meu-nome {
     font-size: 3.5rem;
     color: rgb(5, 154, 199);
+    flex-wrap: wrap;
 }
 
 #sobre-mim #saudacoes p {
     color: #fff;
     font-size: 1.5rem;
     line-height: 40px;
+    flex: 1;
 }
 
 #sobre-mim #foto {
@@ -89,7 +92,7 @@ main {
     margin-left: 30px;
 }
 
-#botao {
+#botao-sobre-mim {
     background-image: linear-gradient(to right, rgb(20, 6, 99), rgb(27, 8, 102), rgb(51, 37, 177));
     color: #fff;
     font-family: 'Oswald', sans-serif;
@@ -99,19 +102,19 @@ main {
     padding: 20px;
     border-radius: 50px;
     border: solid 1px #fff;
-    margin-left: 330px;
+    margin-left: 380px;
     margin-top: 40px;
     margin-bottom: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#botao:hover {
+#botao-sobre-mim:hover {
     background-image: linear-gradient(to right, rgb(7, 0, 76), rgb(0, 0, 50));
     color: rgb(255, 255, 255);
 }
 
-#botao.desativado {
+#botao-sobre-mim.desativado {
     display: none;
 }
 
@@ -125,22 +128,46 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 #apresentacao img {
     border-radius: 20px;
     margin-right: 200px;
+    margin-top: 5px;
+    animation: fadeInAnimation ease 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #texto-sobre-mim {
+    border: solid 1px #fff;
+    border-radius: 20px;
     text-align: justify;
-    padding-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
     font-size: 16px;
     line-height: 40px;
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#skills {
+    margin-top: 100px;
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#imagens-skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+#imagens-soft-skills {
+    display: flex;
+    justify-content: space-around;
 }
