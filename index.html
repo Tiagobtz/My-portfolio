@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Meu Portifólio</title>
 
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
     <link rel="stylesheet" href="src/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <nav id="menu-fixo">
-        <ul id="lista-do-menu-fixo">
-            <li><i class="fas fa-home"></i><br><br>Home</li>
-            <li><i class="fas fa-desktop"></i><br><br>Projects</li>
-            <li><i class="fas fa-id-card"></i><br><br>About me</li>
-            <li><i class="fas fa-network-wired"></i><br><br>Experiences</li>
-            <li><i class="fas fa-hat-wizard"></i><br><br>Soft-skills</li>
+    <nav id="menu">
+        
+        <ul>
+            <li><a href="#sobre-mim"><i class="fas fa-id-card"></i>Sobre mim</a></li>
+            <li><a href=""><i class="fas fa-hat-wizard"></i>Skills</a></li>
+            <li><a href=""><i class="fas fa-desktop"></i>Meus projetos</a></li>
+            <li><a href="#contato"><i class="fas fa-phone"></i>Contato</a></li>
         </ul>
+
     </nav>
+    
+    <main>
+        <section id="sobre-mim">
+            <div id="saudacoes">
+                <h1>Olá!<br><span id="meu-nome">Eu sou Tiago H.</span></h1>
+                
+                <p>Sou um <strong>desenvolvedor front-end</strong> disposto a aprender novas habilidades, afim de criar e aplicar soluções com a ajuda da programação.</p>
+            </div>
 
-    <main id="conteudo-principal">
-        <section id="sessao-principal">
-            <section id="primeira-coluna">
-               <p id="hello">Hello there!</p>
-               <h1 id="meu-nome">I'm Tiago.H</h1>
-               <p id="sobre-mim">I'm a <strong>frontend developer</strong> always ready to build web applications and troubleshoot problems.</p>
-            </section>
-
-            <section id="segunda-coluna">
-               <img src="src/imagens/perfil.png" alt="">
-            </section>
+            <div id="foto">
+                <img src="src/imagens/perfil.png" alt="Minha foto">
+            </div>
         </section>
-    </main> 
+
+        <a href="#apresentacao"><button id="botao" type="button">Um pouco sobre mim</button></a>
+
+        <section id="apresentacao">
+            <div id="ilustracao">
+                <img src="src/imagens/video-game.jpg" alt="Ilustração">
+            </div>
+
+            <div id="texto-sobre-mim">
+                <p>- Sou apaixonado por tecnología desde o meu primeiro contato com vídeo games na infância. Desde então, sempre me perguntei como coisas assim eram possíveis com apenas o apertar de botões, e queria saber como eu poderia criar meu próprio jogo afim de ver como eu poderia divertir alguém com a minha criatividade. Mais tarde o mundo e a tecnología foi evoluindo cada vez mais e foi na programação que descobri que existe um universo de possibilidades na palma da nossa mão. Atualmente sou um desenvolvedor Front-end, mas para mim o céu é o limite e estou disposto a aprender a cada dia mais. Hoje estou em busca da minha primeira vaga no mercado de trabalho, e quero muito uma oportunidade para mostrar ao mundo o que posso fazer com a minha criatividade utilizando o poder da programação.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="src/js/interação.js"></script>
 </body>
 </html>
