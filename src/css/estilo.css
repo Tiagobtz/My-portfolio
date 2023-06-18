@@ -2,6 +2,9 @@ body {
     background-image: linear-gradient(to right, rgb(7, 3, 31), rgb(14, 3, 57), rgb(47, 26, 26));
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -14,6 +17,9 @@ body {
 }
 
 #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin-top: 25px;
     margin-left: 10px;
     position: fixed;
@@ -33,11 +39,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    margin: 5px;
 }
 
 #menu ul li a {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
 }
@@ -49,13 +57,12 @@ body {
     transition: all 0.5s;
 }
 
-.fas {
-    font-size: 18px;
-    margin-bottom: 20px;
+.icons {
+    font-size: 40px;
 }
 
 main {
-    margin-left: 200px;
+    margin-left: 230px;
 }
 
 #sobre-mim {
@@ -63,19 +70,25 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+#sobre-mim.animacao {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 #saudacoes {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 80px;
 }
 
 #sobre-mim #saudacoes h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 30px;
 }
 
 #sobre-mim #saudacoes #meu-nome {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     color: rgb(5, 154, 199);
     flex-wrap: wrap;
 }
@@ -92,104 +105,10 @@ main {
     margin-left: 30px;
 }
 
-#botao-sobre-mim {
-    background-image: linear-gradient(to right, rgb(20, 6, 99), rgb(27, 8, 102), rgb(51, 37, 177));
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    display: block;
-    padding: 20px;
-    border-radius: 50px;
-    border: solid 1px #fff;
-    margin-left: 380px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#botao-sobre-mim:hover {
-    background-image: linear-gradient(to right, rgb(7, 0, 76), rgb(0, 0, 50));
-    color: rgb(255, 255, 255);
-}
-
-#botao-sobre-mim.desativado {
-    display: none;
-}
-
-#apresentacao {
-    display: none;
-}
-
-#apresentacao.ativo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 70px;
-}
-
-#apresentacao img {
-    border-radius: 20px;
-    margin-right: 150px;
-    margin-top: 100px;
-    animation: fadeInAnimation ease 15s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#texto-sobre-mim {
-    border: solid 1px #fff;
-    border-radius: 20px;
-    text-align: justify;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 100px;
-    font-size: 16px;
-    line-height: 40px;
-    animation: fadeInAnimation ease 10s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 #skills {
     display: none;
-    margin-top: 150px;
-    background-color: #fff;
-    color: black;
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 20px;
 }
 
-#skills.ativo {
+#skills.animacao {
     display: block;
-    margin-top: 200px;
-    margin-left: 130px;
-    background-color: #ffffff;
-    color: black;
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 20px;
-    animation: fadeInAnimation ease 20s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#skills h3 {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-#imagens-skills {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 80px;
-}
-
-#imagens-soft-skills {
-    display: flex;
-    justify-content: space-around;
 }
