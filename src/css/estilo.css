@@ -50,15 +50,14 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#menu ul li:hover {
-    background-color: rgb(46, 50, 174);
+.icons {
+    font-size: 35px;
     cursor: pointer;
-    border-radius: 20px;
-    transition: all 0.5s;
+    transition: 0.2s;
 }
 
-.icons {
-    font-size: 40px;
+.icons:hover {
+    font-size: 50px;
 }
 
 main {
@@ -101,7 +100,7 @@ main {
 }
 
 #sobre-mim #foto {
-    margin-top: 110px;
+    margin-top: 130px;
     margin-left: 30px;
 }
 
